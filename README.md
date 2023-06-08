@@ -8,7 +8,7 @@ This project was generated with Vite version 4.3.2.
 
 
 ## Screenshot
-![Screenshot](https://github.com/Adedeji-Taiwo/Metacast/blob/main/src/assets/screenshots/Metcast.png)
+![Screenshot](https://github.com/Adedeji-Taiwo/Metcast/blob/main/src/assets/screenshots/Metcast.png)
   
   
 ## Link
