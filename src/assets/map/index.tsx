@@ -1,0 +1,6 @@
+export {default as hot} from './hot.png'
+export {default as warm} from './warm.png'
+export {default as cool} from './cool.png'
+export {default as cold} from './cold.png'
+export {default as wind} from './wind.png'
+export {default as humidityImg} from './humidity.png'
