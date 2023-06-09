@@ -38,6 +38,15 @@ Below are the third party libraries used in this project:
 - An input field for filtering cities by entered value with lists of matching cities.
 - Clicking on a city name from the list selects the city on the map and displays a marker on the selected city.
 - Clicking on the marker displays a Mapbox popup with weather information for today and tomorrow.
+  
+
+## Environment Variables
+To run the project locally, you need to set up the following environment variables:
+
+- Please replace `YOUR_MAPBOX_ACCESS_TOKEN` and `YOUR_OPEN_WEATHER_API_KEY` with your actual access tokens for Mapbox and OpenWeather API, respectively.
+
+        - VITE_MAPBOX_ACCESS_TOKEN=your_actual_mapbox_access_token
+        - VITE_OPEN_WEATHER_APIKEY=your_actual_open_weather_apikey 
 
 
 ## Setup
@@ -45,8 +54,9 @@ Below are the third party libraries used in this project:
 - Install dependencies using `npm install`.
 - Generate API_KEY for the weather API by signing up at [openweatherapi](https://openweathermap.org/).
 - Sign up for a Mapbox account at [mapbox](https://mapbox.com/) and visit the Mapbox Studio to get the desired map style and generate a Mapbox Access Token.
-- Create `.env` file to store config variables such as API Key, Mapbox Access Token, and any other necessary variables. Add `.env` file to gitignore before committing to keep keys and other information private.
+- Create `.env` file to store config variables such as Openweather API Key, Mapbox Access Token, and any other necessary variables. Add `.env` file to gitignore before committing to keep keys and other information private.
 - Start the development server by running npm start.
+
 
 
 ## Contributions
