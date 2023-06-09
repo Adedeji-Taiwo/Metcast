@@ -47,9 +47,14 @@ useEffect(() => {
       setWeatherData(null);
       return;
     }
-    const response = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${selectedCity.latitude}&lon=${selectedCity.longitude}&exclude=hourly,minutely,current,alerts&appid=${openWeatherAPIKey}&cnt=2`);
-    const data = response.data;
-    setWeatherData(getForecastData(data.daily));
+    
+    try {
+      const response = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${selectedCity.latitude}&lon=${selectedCity.longitude}&exclude=hourly,minutely,current,alerts&appid=${openWeatherAPIKey}&cnt=2`);
+      const data = response.data;
+      setWeatherData(getForecastData(data.daily));
+    } catch (error) {
+      toast.error(<span className='text-blackish xl:text-base lg:text-sm text-xs'>Error exists. Try again!</span>, {duration: 4000})
+    }
   };
   fetchWeatherData();
 }, [selectedCity]);
