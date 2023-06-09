@@ -55,8 +55,7 @@ To run the project locally, you need to set up the following environment variabl
 - Generate API_KEY for the weather API by signing up at [openweatherapi](https://openweathermap.org/).
 - Sign up for a Mapbox account at [mapbox](https://mapbox.com/) and visit the Mapbox Studio to get the desired map style and generate a Mapbox Access Token.
 - Create `.env` file to store config variables such as Openweather API Key, Mapbox Access Token, and any other necessary variables. Add `.env` file to gitignore before committing to keep keys and other information private.
-- Start the development server by running npm start.
-
+- Start the development server by running npm run dev.
 
 
 ## Contributions
